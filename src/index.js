@@ -73,3 +73,17 @@ introImg.addEventListener('dragend', function(event) {
   doc.classList.toggle('make-it-blue');
   console.log('ahahahaha')
 })
+
+// number nine -- 'mousedown'
+
+introImg.addEventListener('mousedown', evt => {
+  evt.preventDefault();
+  doc.classList.toggle('make-it-red');
+})
+
+// number ten -- 'mouseup'
+
+introImg.addEventListener('mouseup', e => {
+  e.preventDefault();
+  doc.classList.toggle('make-it-red');
+})
